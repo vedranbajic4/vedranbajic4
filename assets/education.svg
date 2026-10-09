@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="300" viewBox="0 0 860 300">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="border" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+    .h { fill: #ffffff; font-size: 20px; font-weight: 800; letter-spacing: 1px; }
+    .yr { fill: #a1a1aa; font-size: 13px; font-weight: 600; }
+    .t { fill: #ffffff; font-size: 15px; font-weight: 700; }
+    .s { fill: #e4e4e7; font-size: 12px; }
+    .tag { fill: #0a0a0f; font-size: 11px; font-weight: 800; }
+    .fill { transform-box: fill-box; transform-origin: left center; transform: scaleX(0); animation: grow 1.8s cubic-bezier(.2,.8,.2,1) forwards; }
+    .d2 { animation-delay: 0.9s; }
+    @keyframes grow { to { transform: scaleX(1); } }
+    .fade { opacity: 0; animation: fade 0.6s ease forwards; }
+    @keyframes fade { to { opacity: 1; } }
+    .pulse { transform-box: fill-box; transform-origin: center; animation: pulse 1.6s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.6); opacity: 0.35; } }
+  </style>
+
+  <rect x="10" y="10" width="840" height="280" rx="16" fill="#0a0a0f" stroke="url(#border)" stroke-width="2"/>
+  <text x="40" y="50" class="h">EDUCATION · TWO DEGREES, ONE MIND</text>
+  <text x="820" y="50" text-anchor="end" class="yr">University of Novi Sad</text>
+
+  <!-- axis: 2024 → 2028, x = 140 + (year-2024)*170 -->
+  <g stroke="#27272a" stroke-width="1">
+    <line x1="140" y1="72" x2="140" y2="250"/>
+    <line x1="310" y1="72" x2="310" y2="250"/>
+    <line x1="480" y1="72" x2="480" y2="250"/>
+    <line x1="650" y1="72" x2="650" y2="250"/>
+    <line x1="820" y1="72" x2="820" y2="250"/>
+  </g>
+  <g class="yr" text-anchor="middle">
+    <text x="140" y="272">2024</text>
+    <text x="310" y="272">2025</text>
+    <text x="480" y="272">2026</text>
+    <text x="650" y="272">2027</text>
+    <text x="820" y="272">2028</text>
+  </g>
+
+  <!-- FTN: 2024 – 2028 -->
+  <text x="40" y="105" class="t" fill="#ec4899">FTN</text>
+  <rect x="140" y="88" width="680" height="34" rx="17" fill="#18181b"/>
+  <rect x="140" y="88" width="680" height="34" rx="17" fill="url(#g1)" class="fill"/>
+  <text x="158" y="110" class="t fade" style="animation-delay:1.2s">Software Engineering</text>
+  <text x="40" y="140" class="s fade" style="animation-delay:1.4s">Faculty of Technical Sciences · algorithms, architecture, distributed &amp; parallel systems</text>
+
+  <!-- PMF: 2026 – 2028 -->
+  <text x="40" y="185" class="t">PMF</text>
+  <rect x="480" y="168" width="340" height="34" rx="17" fill="#18181b"/>
+  <rect x="480" y="168" width="340" height="34" rx="17" fill="url(#g2)" class="fill d2"/>
+  <text x="498" y="190" class="t fade" style="animation-delay:2.1s">Theoretical Mathematics</text>
+  <text x="40" y="225" class="s fade" style="animation-delay:2.3s">Faculty of Sciences · analysis, algebra, topology, logic</text>
+
+  <!-- converging graduation point -->
+  <g class="fade" style="animation-delay:2.8s">
+    <circle cx="820" cy="145" r="9" fill="#ec4899" class="pulse"/>
+    <circle cx="820" cy="145" r="6" fill="#ffffff" filter="url(#glow)"/>
+    <rect x="700" y="230" width="112" height="22" rx="11" fill="#c084fc"/>
+    <text x="756" y="245" text-anchor="middle" class="tag">DOUBLE GRAD '28</text>
+  </g>
+</svg>
