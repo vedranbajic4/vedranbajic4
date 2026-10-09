@@ -173,7 +173,6 @@ $$
 <h2 align="center">📊 github stats</h2>
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=vedranbajic4&show_icons=true&include_all_commits=true&count_private=true&bg_color=0d0d0d&title_color=ec4899&text_color=ffffff&icon_color=a855f7&border_color=8b5cf6&ring_color=ec4899&border_radius=12" alt="stats"/>
   <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vedranbajic4&layout=compact&langs_count=8&bg_color=0d0d0d&title_color=ec4899&text_color=ffffff&border_color=8b5cf6&border_radius=12" alt="top languages"/>
 </p>
 
